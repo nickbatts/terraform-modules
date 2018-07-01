@@ -10,12 +10,6 @@ variable "enable_private_subnet" {
   description = "Enable private subnet and get charged for provisioned NAT gateway"
 }
 
-variable "environment" {
-  type        = "string"
-  default     = "DEV"
-  description = "TEST|DEV|QA|STAGING|PROD"
-}
-
 variable "region" {
   type        = "string"
   default     = "us-east-1"

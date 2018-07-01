@@ -2,8 +2,8 @@
 🛠️ This is a set of [Terraform](https://terraform.io/) modules for provisioning common configurations of infrastructure on AWS.
 
 ## Requirements
-- Terraform 0.11.7+ - For installation instructions go [here](https://www.terraform.io/intro/getting-started/install.html). Or you can use a Docker image like [this one](https://hub.docker.com/r/hashicorp/terraform/).
-- AWS account - Free; if you don't have an account you can sign up at https://aws.amazon.com/. By default we use t2.small instances.
+- **Terraform 0.11.7+** - For installation instructions go [here](https://www.terraform.io/intro/getting-started/install.html). Or you can use a Docker image like [this one](https://hub.docker.com/r/hashicorp/terraform/).
+- **AWS account** - Free; if you don't have an account you can sign up at https://aws.amazon.com/. By default we use t2.small instances.
 
 ## Getting Started
 Any of the modules in this directory can be used alone or together with care taken to avoid potential duplicate naming issues.
@@ -17,7 +17,7 @@ Any of the modules in this directory can be used alone or together with care tak
 - `$ terraform apply` - approve and perform resource modifications
 
 ## Author
-* Module maintained by [Nick Batts](https://github.com/nickbatts) and other [awesome contributors](https://github.com/nickbatts/terraform-modules/graphs/contributors).
+* Module maintained by [Nick Batts](https://github.com/nickbatts).
 
 ## License
 MIT License

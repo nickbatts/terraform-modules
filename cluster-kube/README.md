@@ -14,8 +14,8 @@ The `cluster-kube` module requires 5 variables to be defined in the `variables.t
 
 ## Usage
 ```hcl
-module "vpc" {
-  source = "github.com/nickbatts/terraform-modules/cluster-kube"
+module "kubernetes" {
+  source = "github.com/nickbatts/terraform-modules//cluster-kube"
 
   asg_desired_count = "${var.asg_desired_count}"
   cluster_name      = "${var.cluster_name}"
@@ -36,7 +36,7 @@ module "vpc" {
 - Verify the worker nodes are joining the cluster via: `kubectl get nodes --watch`
 
 ## Links
-- [AWS VPC Overview](https://aws.amazon.com/eks/)
+- [AWS EKS Overview](https://aws.amazon.com/eks/)
 - [Terraform AWS EKS Getting Started](https://www.terraform.io/docs/providers/aws/guides/eks-getting-started.html)
 
 ## Author

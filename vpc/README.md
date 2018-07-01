@@ -7,13 +7,13 @@ The vpc module requires a number of variables to be defined in the `variables.tf
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | cloud_name | Name of the Virtual Private Cloud | string | `AppCloud` | yes |
-| enable_private_subnet | AWS region to create resources in | string | `us-west-1` | yes |
+| enable_private_subnet | Enable private subnet and get charged for provisioned NAT gateway | boolean | `false` | yes |
 | region | AWS region to create resources in | string | `us-west-1` | yes |
 
 ## Usage
 ```
 module "vpc" {
-  source = "github.com/nickbatts/terraform-modules/vpc"
+  source = "github.com/nickbatts/terraform-modules//vpc"
 
   cloud_name = "${var.cloud_name}"
   environment = "${var.environment}"
