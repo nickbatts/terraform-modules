@@ -26,8 +26,6 @@ ln -sf /usr/share/zoneinfo/America/Denver /etc/localtime
 
 yum update && yum upgrade -y
 
-DD_API_KEY=f6584293308543fc483c07c6476e2229 bash -c "$(curl -L https://raw.githubusercontent.com/DataDog/datadog-agent/master/cmd/agent/install_script.sh)"
-
 CA_CERTIFICATE_DIRECTORY=/etc/kubernetes/pki
 CA_CERTIFICATE_FILE_PATH=$CA_CERTIFICATE_DIRECTORY/ca.crt
 mkdir -p $CA_CERTIFICATE_DIRECTORY

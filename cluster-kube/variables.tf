@@ -1,7 +1,7 @@
 variable "asg_desired_count" {
+  description = "How many instances would you like in this ASG?"
   type        = "string"
   default     = "1"
-  description = "How many instances would you like in this ASG?"
 }
 
 variable "cluster_name" {
